@@ -43,7 +43,7 @@ except:
 	print("Folder already exists, this may overwrite data.")
 
 # format code for url
-code = code.replace('0','').replace('/','-')
+code = code.lower().replace('0','').replace('/','-')
 
 # create base url
 base_url = "http://webapps.fundp.ac.be/bib/zoom/rca-" + code + "_img/TileGroup"
