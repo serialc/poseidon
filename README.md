@@ -9,7 +9,8 @@ Poseidon is Python script that extracts tiles from the NEPTUN map server and rec
 	a. pass the parameters throught the command line, or
 
 	```
-python namur_city 6/007B 2 [256]
+python namur_city 6/007B 2
+python namur_city 6/007B 3 256
 	```
 
 	b. respond to the prompts (defining tile size is not an option).
