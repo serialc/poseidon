@@ -4,9 +4,9 @@ Poseidon
 Poseidon is Python script that extracts tiles from the NEPTUN map server and reconstitutes them as an image. 
 
 1. Select a map you desire from [NEPTUN](http://neptun.unamur.be/items/browse?collection=30)
-2. Start the script and either:
+2. Start the script by either:
 
-	a. pass the parameters throught the command line, or
+	a. passing the parameters throught the command line, or
 
 	```
 python namur_city 6/007B 2
