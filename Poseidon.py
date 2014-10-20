@@ -22,6 +22,11 @@ if len(sys.argv) == 4:
 	name, code, zoom = sys.argv[1:4]
 elif len(sys.argv) == 5:
 	name, code, zoom, size = sys.argv[1:5]
+elif sys.argv[1] == '--help':
+	print("Command format:")
+        print("python Poseiden.py")
+        exit("python Poseiden.py 'name' 'map code' 'zoom level' [optional tile size-256 default]\n")
+
 elif len(sys.argv) == 1:
 	try:
 		name = raw_input("Enter map name:")
@@ -79,8 +84,8 @@ while True:
 
 						# found a working tile group, save and exit this nexted loop
 						tile_group = tile_number
-						valid_tg = TRUE
-						print(paste("Using new tile group:", tile_group))
+						valid_tg = True
+						print("Using new tile group:" + str(tile_group))
 						break
 
 					except urllib2.HTTPError:
