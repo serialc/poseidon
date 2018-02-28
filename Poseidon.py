@@ -1,6 +1,7 @@
 # Poseidon, extracts maps from neptun map image tiles
 # http://neptun.unamur.be/items/browse?collection=30
-import Image, re, sys, os, urllib2
+from PIL import Image
+import re, sys, os, urllib2
 
 print("Poseidon, extracts maps from neptun map image tiles.\nSee http://neptun.unamur.be/items/browse?collection=30\n")
 
@@ -68,7 +69,7 @@ while True:
 	while True:
 		print(str(x) + ',' + str(y))
 		
-		# check if file exists locally
+		# check if file already exists locally
 		if not os.path.exists(base_path + '/tiles/' + name + '_' + str(zoom) + '-' + str(x) + '-' + str(y) + '.jpg'):
 			# check if it is available online
 			try:
